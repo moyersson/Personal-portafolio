@@ -56,6 +56,11 @@ nav {
   margin-left: auto;
 }
 
+li {
+    list-style-type:none;
+    
+}
+
 .navigation-item {
   margin: var(--spacing-1);
 }

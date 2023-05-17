@@ -8,3 +8,16 @@ setInterval(() =>{
     const difference = Math.floor((now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000);
     timeContainer.innerText = intlNumberFormatter.format(difference);
 },1000);
+
+let itemTwo = document.getElementById("about-me");
+
+function changeBackground(){
+    itemTwo.style.backgroundColor  = 'pink';
+  }
+  itemTwo.addEventListener('mouseover',changeBackground);
+
+  
+  function returnBackground(){
+    itemTwo.style.backgroundColor  = 'white';
+  }
+  itemTwo.addEventListener('mouseout',returnBackground);
